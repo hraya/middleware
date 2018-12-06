@@ -10,8 +10,11 @@ const morgan = require('morgan')
 // const customMW = require('./custom_middleware.js')
 const supplierRouter = require('./routers/supplier_router.js')
 const itemRouter = require('./routers/item_router.js')
+
+
+
 const server = express();
-const PORT = 4000;
+const PORT = process.env.PORT || 4000;
 
 //middleware
 //1)built in
