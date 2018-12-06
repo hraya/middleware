@@ -34,6 +34,10 @@ server.use(
 
 server.use('/api/suppliers', supplierRouter);
 server.use('/api/items', itemRouter);
+
+server.get('/', (req, res) =>{
+    res.send("we are live")
+})
 //2 resources : suppliers, items
 
 // server.get('/api/suppliers', (req, res) =>{
